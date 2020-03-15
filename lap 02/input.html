@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Personal info</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="\PhpProject1\bootstrap-4.4.1-dist\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css"> -->
+</head>
+
+<body class="background">
+    <div class="header">
+        Group 3 Exercise Lab 2.
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4" style="padding: 20px;background: cadetblue;border-radius: 25px; box-shadow: 10px 10px;">
+            <form action="index.php" method="post">
+                <label for="name" style="padding-top: 5px; padding-bottom: 5px;">
+                    <i class="fa fa-user" aria-hidden="true"></i> Name:
+                </label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="univer" style="padding-top: 5px; padding-bottom: 5px;"> 
+                    <i class="fas fa-university"></i>University:
+                </label>
+                <input class="form-control" type="text" id="univer" placeholder="Enter your university" name="univer">
+                <label for="email" style="padding-top: 10px; padding-bottom: 5px;">
+                    <i class="fas fa-envelope"></i> Email address:
+                </label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                <label for="pwd" style="padding-top: 10px; padding-bottom: 5px;"> 
+                    <i class="fas fa-key"></i> Password:
+                </label>
+                <input type="password" class="form-control" placeholder="Enter password" id="pwd" name="pwd">
+                <label for="optradio" style="padding-top: 10px; padding-bottom: 5px;"> 
+                    <i class="fa fa-venus-mars" aria-hidden="true"></i> Gender:
+                </label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="optradio" value="Male">Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="optradio" value="Female">Female
+                    </label>
+                  </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="btn btn-danger"value="Submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        Team member: Luu The Tung
+    </div>
+</body>
+
+</html>
