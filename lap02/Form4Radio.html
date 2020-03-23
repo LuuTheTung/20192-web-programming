@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>A simple form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\input.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="\PhpProject1\bootstrap-4.4.1-dist\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+</head>
+
+<body class="background">
+    <div class="header">
+        Group 3 Exercise Lab 02.
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4" style="padding: 20px;background: cadetblue;border-radius: 25px; box-shadow: 10px 10px;">
+            <form action="Form4Radio.php" method="POST">
+                <label for="email" style="padding-top: 10px; padding-bottom: 5px;">
+                    <i class="fas fa-envelope"></i> Email address:
+                </label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                <label for="optradio" style="padding-top: 10px; padding-bottom: 5px;"> 
+                    <i class="fa fa-question" aria-hidden="true"></i> May we contact you?
+                </label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" value="Yes">Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" value="No">No
+                    </label>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="btn btn-danger" value="Submit">Submit</button>
+                    <button type="reset" class="btn btn-primary" value="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        Team member: Luu The Tung
+    </div>
+</body>
+
+</html>
