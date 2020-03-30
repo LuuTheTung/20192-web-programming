@@ -40,8 +40,24 @@ and open the template in the editor.
             $year = $_GET["year"];
             $time = $_GET["time"];
             $year_format = date('D, d M Y',strtotime($year));
+            $getYear = date('Y',strtotime($year));
             print("Hi $name!<br>");
             print("You have an appointment on $time, $year_format.");
+            if(is_leap_year($getYear)){
+                print("<br>$getYear is leap year.");
+            }
+            else{
+                print("<br>$getYear is not a leap year.");
+            }
+            $getDate = date("t", strtotime($year));
+            print("<br>This month has $getDate days.");
+            ?>
+
+            <?php
+                function is_leap_year($year)
+                {
+                    return ((($year % 4) == 0) && ((($year % 100) != 0) || (($year %400) == 0)));
+                }
             ?>
         </form>
 

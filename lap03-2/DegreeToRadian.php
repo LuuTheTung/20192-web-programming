@@ -17,7 +17,7 @@
             <input type="reset" value="Reset">
             <?php
             
-                if(!empty($_GET["number"] && !empty($_GET["function"]))){
+                if(!empty($_GET["number"])){
                     $number = $_GET["number"];
                     if(is_numeric($number)){
                         $function = $_GET["function"];
