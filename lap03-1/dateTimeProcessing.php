@@ -39,8 +39,9 @@ and open the template in the editor.
             $name = $_GET["name"];
             $year = $_GET["year"];
             $time = $_GET["time"];
+            $year_format = date('D, d M Y',strtotime($year));
             print("Hi $name!<br>");
-            print("You have an appointment on $time, $year.");
+            print("You have an appointment on $time, $year_format.");
             ?>
         </form>
 
