@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Object Cloning</title>
+    </head>
+    <body>
+        <?php
+            class ObjectTracker {
+                private static $nextSerial = 0;
+                private $id, $name;
+
+                function __construct($name){
+                    $this->name = $name;
+                    $this->id = ++self::$nextSerial;
+                }
+
+                function __clone(){
+                    $this->name = "Clone of $this->name";
+                    $this->id = ++self::$nextSerial;
+                }
+
+                function getId() {
+                    return $this->id;
+                }
+
+                function getName() {
+                    return $this->name;
+                }
+
+                function setName($name): void {
+                    $this->name = $name;
+                }
+            }
+
+            $ot = new ObjectTracker("Zeev's Object");
+            $ot2 = clone($ot);
+            $ot2->setName("Another object");
+            print($ot->getId() . " " . $ot->getName() . "<br>");
+            print($ot2->getId() . " " . $ot2->getName() . "<br>");
+            
+        ?>
+    </body>
+</html>

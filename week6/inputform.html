@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>A simple form with database example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="\PhpProject1\bootstrap-4.4.1-dist\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+</head>
+
+<body class="background">
+    <div class="header">
+        Group 3 simple form example.
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4" style="padding: 20px;background: cadetblue;border-radius: 25px; box-shadow: 10px 10px;">
+            <form action="insert.php" method="POST">
+                <label for="username" style="padding-top: 10px; padding-bottom: 5px;">
+                    <i class="fa fa-user" aria-hidden="true"></i> Username:
+                </label>
+                <input type="text" class="form-control" placeholder="Enter username" id="username" name="username" required>
+                
+                <label for="password" style="padding-top: 10px; padding-bottom: 5px;">
+                    <i class="fa fa-key" aria-hidden="true"></i> Password:
+                </label>
+                <input type="password" class="form-control" placeholder="Enter password" id="password" name="password" required>
+                
+                <label for="gender" style="padding-top: 10px; padding-bottom: 5px;">
+                    <i class="fa fa-venus-mars" aria-hidden="true"></i> Gender:
+                </label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="m" checked>Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="f">Female
+                    </label>
+                </div>
+                
+                <label for="email" style="padding-top: 10px; padding-bottom: 5px;">
+                    <i class="fas fa-envelope"></i> Email address:
+                </label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email" name="email" required>
+                
+                <label for="phone" style="padding-top: 10px; padding-bottom: 5px;">
+                    <i class="fa fa-phone" aria-hidden="true"></i> Phone number:
+                </label>
+                <select name="phoneCode" required>
+                            <option value="+84">+84</option>
+                            <option value="+86">+86</option>
+                </select>
+                <input type="text" class="form-control" placeholder="Enter phone number" id="phone" name="phone" required>
+                
+                <div style="text-align: center;">
+                    <button type="submit" class="btn btn-danger" value="Submit">Submit</button>
+                    <button type="reset" class="btn btn-primary" value="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        Team member: Luu The Tung
+    </div>
+</body>
+
+</html>
