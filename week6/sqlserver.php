@@ -36,7 +36,7 @@ Weight INT,
 
 Numb INT)";
 
-            mysql_select_db($mydb);
+            $mysqli->select_db($mydb);
 
             if (mysql_query($SQLcmd, $connect)) {
 
