@@ -4,7 +4,7 @@ $url = $_POST["url"];
 $email = $_POST["email"];
 function validating($phone)
 {
-    if (preg_match('/^[0-9]{10}+$/', $phone)) {
+    if (preg_match('/[0]+[0-9]{1}+[0-9]{8}+$/', $phone)) {
         echo "Valid $phone <br>";
     } else {
         echo "Invalid $phone <br>";
